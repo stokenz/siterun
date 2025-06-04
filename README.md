@@ -17,6 +17,7 @@ An open source platform for infrastructure monitoring.
 - Login with a username/password and/or single sign-on (Google & Microsoft)
 - RBAC user permissions and feature gating
 - OpenAPI documentation with Swagger playground
+- Core features open source (AGPL) with enterprise features licensed
 
 ## Device Support
 
@@ -25,7 +26,7 @@ Monitor any network connected device that supports:
 - HTTP / HTTPS
 - MQTT v5
 
-Types of devices PRISM has been tested with:
+Types of devices SiteRun has been tested with:
 - Power Systems (Eaton SC200, SC300)
 - Generators
 - Solar Chargers
