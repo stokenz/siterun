@@ -1,0 +1,29 @@
+{
+  "name": "@siterun/api",
+  "type": "module",
+  "scripts": {
+    "dev:cf": "cp .env .dev.vars && wrangler dev",
+    "dev:node": "tsx watch src/node.ts",
+    "build:node": "tsc",
+    "start:node": "node dist/node.js",
+    "deploy:cf": "wrangler deploy --minify",
+    "types:cf": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.3",
+    "@hono/zod-openapi": "0.19.8",
+    "better-auth": "1.2.8",
+    "drizzle-orm": "0.44.2",
+    "hono": "^4.7.11",
+    "pg": "8.16.0",
+    "zod": "3.25.50"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.19",
+    "@types/pg": "8.15.4",
+    "drizzle-kit": "0.31.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.4.0"
+  }
+}

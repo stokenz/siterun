@@ -1,0 +1,28 @@
+{
+  "name": "@siterun/collector",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Collects data from SNMP devices and publishes it to MQTT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "mqtt": "5.10.4",
+    "net-snmp": "3.12.1",
+    "pino": "9.6.0",
+    "pino-logfmt": "0.1.1",
+    "pino-pretty": "13.0.0"
+  },
+  "devDependencies": {
+    "tsup": "catalog:",
+    "typescript": "catalog:"
+  }
+}
