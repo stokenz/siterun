@@ -2,6 +2,7 @@ import { OpenAPIHono } from "@hono/zod-openapi";
 import users from "./routes/users";
 import auth from "./routes/auth";
 import { cors } from "hono/cors";
+import { swaggerUI } from "@hono/swagger-ui";
 
 const app = new OpenAPIHono({
   defaultHook: (result, c) => {
@@ -23,6 +24,7 @@ app.use("*", async (c, next) => {
     origin: "http://localhost:3001",
     credentials: true,
   });
+
   return corsMiddlewareHandler(c, next);
 });
 
@@ -42,5 +44,7 @@ app.doc31("/docs", {
     title: "SiteRun API",
   },
 });
+
+app.get("/swagger", swaggerUI({ url: "/docs" }));
 
 export default app;
