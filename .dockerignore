@@ -1,0 +1,13 @@
+node_modules
+.git
+.gitignore
+*.md
+dist
+.devcontainer
+.do
+.git
+.github
+.vscode
+.astro
+.env
+apps/mobile

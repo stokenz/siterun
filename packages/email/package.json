@@ -1,0 +1,17 @@
+{
+  "name": "@siterun/email",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "email dev -p 3002 --dir src",
+    "export": "email export"
+  },
+  "dependencies": {
+    "@react-email/components": "catalog:",
+    "react": "catalog:",
+    "react-email": "2.1.6"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:"
+  }
+}

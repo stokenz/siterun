@@ -1,0 +1,12 @@
+{
+  "name": "@siterun/tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "End-to-end tests for Siterun",
+  "scripts": {
+    "test": "pnpm exec playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

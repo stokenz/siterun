@@ -1,0 +1,11 @@
+.paper {
+  color: light-dark(var(--mantine-color-blue-6), var(--mantine-color-blue-5));
+
+  &:hover .paperChild {
+    transform: scale(1.02);
+  }
+}
+
+.paperChild {
+  transition: transform 0.2s ease-in-out;
+}
